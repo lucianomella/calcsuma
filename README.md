@@ -7,8 +7,17 @@ Node 12.10.0
 npm 6.10.3
 ~~~
 
-## Input
-Se espera como entrada un JSON con dos (2) parámetros: 'a' y 'b', los cuales pueden ser número o tipo caracter.
+# Endpoint /suma
+
+Para el servicio se debe consulta a traves de metodo POST la URl.
+
+Ejemplo:
+~~~
+http://localhost/suma
+~~~
+
+### Input
+Se espera como entrada un body JSON con dos (2) parámetros: 'a' y 'b', los cuales pueden ser número o tipo caracter.
 
 Ejemplo 1:
 ~~~
@@ -68,4 +77,14 @@ Si alguno de los parámetros 'a' y 'b' no se encuentran en el body de la solicit
 Ejemplo:
 ~~~
 Error en datos
+~~~
+
+
+## Endpoint /coverage
+
+Se puede visualizar la cobertura de la prueba desde la URl.
+
+Ejemplo:
+~~~
+http://localhost/coverage
 ~~~
