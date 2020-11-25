@@ -1,6 +1,12 @@
 # Calcsuma
 Micro-servicio simple que suma dos variables
 
+## Versión
+~~~
+Node 12.10.0
+npm 6.10.3
+~~~
+
 ## Input
 Se espera como entrada un JSON con dos (2) parámetros: 'a' y 'b', los cuales pueden ser número o tipo caracter.
 
@@ -51,11 +57,12 @@ Para un input
 ~~~
 
 El resultado es:
-~~
-~
+~~~
     15
 ~~~
+
 ### Status 400
+
 Si alguno de los parámetros 'a' y 'b' no se encuentran en el body de la solicitud o no son números válidos se devuelve un mensaje de error con status de error http 400.
 
 Ejemplo:
