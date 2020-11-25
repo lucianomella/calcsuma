@@ -1,2 +1,64 @@
-# calcsuma
-micro-servicio simple que suma para hacer pruebas con kafka
+# Calcsuma
+Micro-servicio simple que suma dos variables
+
+## Input
+Se espera como entrada un JSON con dos (2) parámetros: 'a' y 'b', los cuales pueden ser número o tipo caracter.
+
+Ejemplo 1:
+~~~
+{
+    "a": 10,
+    "b": 22
+}
+~~~
+
+Ejemplo 2:
+~~~
+{
+    "a": "11",
+    "b": 5
+}
+~~~
+
+Ejemplo 3:
+~~~
+{
+    "a": 456,
+    "b": "10"
+}
+~~~
+
+Ejemplo 4:
+~~~
+{
+    "a": "56",
+    "b": "11"
+}
+~~~
+
+## Output
+Se pueden generar 2 resultados.
+
+### Status 200
+Devuelve un número en formto de texto.
+Ejemplo:
+Para un input
+~~~
+{
+    "a": 5,
+    "b": 10
+}
+~~~
+
+El resultado es:
+~~
+~
+    15
+~~~
+### Status 400
+Si alguno de los parámetros 'a' y 'b' no se encuentran en el body de la solicitud o no son números válidos se devuelve un mensaje de error con status de error http 400.
+
+Ejemplo:
+~~~
+Error en datos
+~~~
